@@ -1,6 +1,6 @@
 <script>
   import { slide } from "svelte/transition";
-  import { page } from "../stores/page";
+  import { page } from "../stores";
 
   import Icon from "./Icon.svelte";
   import paths from "../docs";
@@ -27,7 +27,7 @@
                 {name.replace(/\B[A-Z]/g, " $&")}
               </li>
             {:else}
-              <li class="file">WIP</li>
+              <li class="file">...</li>
             {/each}
           </ul>
         {/if}

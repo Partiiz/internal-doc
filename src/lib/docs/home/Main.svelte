@@ -24,9 +24,18 @@
 <p>
   Soirées dont l'organisateur a payé pour en faire la promotion (Zone Ville,
   Alentours, Région et National) (Pas de rangements chronologiques, rangement en
-  fonction du prix qui a été payé.) (Le top 3 des soirées sponsorisées sont
-  entourés d'un contour OR(1er), ARGENT(2eme), BRONZE(3eme), les autres n'auront
-  pas de contours)
+  fonction du prix qui a été payé.)
+</p>
+<p>
+  Le top 3 des soirées sponsorisées sont entourés d'un contour
+  <br />
+  OR(1er),
+  <br />
+  ARGENT(2eme),
+  <br />
+  BRONZE(3eme),
+  <br />
+  les autres n'auront pas de contours
 </p>
 
 <style>
