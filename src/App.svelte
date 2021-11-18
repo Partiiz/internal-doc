@@ -1,5 +1,5 @@
 <main>
-  <h1>DOC</h1>
+  <h1>Internal DOC</h1>
 </main>
 
 <style global>
