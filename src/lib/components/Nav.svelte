@@ -38,9 +38,12 @@
 
 <style lang="scss">
   nav {
+    flex-shrink: 0;
+
     background-color: var(--primary);
     color: rgb(var(--secondary));
     height: 100vh;
+    width: 20em;
     overflow-y: auto;
   }
 

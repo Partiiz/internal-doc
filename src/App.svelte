@@ -7,6 +7,12 @@
 <Nav />
 <main>
   {#if $page.current}
+    <h1 style="font-weight: 900; margin-bottom: 1em;">
+      {$page.current.name
+        .match(/(?<=<)[^>]*(?=>)/)
+        .toString()
+        .replace(/\B[A-Z]/g, " $&")}
+    </h1>
     <svelte:component this={$page.current} />
   {/if}
 </main>
@@ -16,6 +22,7 @@
 
   main {
     padding: 2em;
+    flex: 1;
   }
 
   #app {
@@ -46,5 +53,9 @@
   ul,
   ol {
     list-style: none;
+  }
+
+  img {
+    width: 100%;
   }
 </style>
