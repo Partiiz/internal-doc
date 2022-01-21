@@ -62,6 +62,9 @@
 <h2>Sponsoriser sa soirée</h2>
 <p>
 	La sponsorisation de soirée est l'un des moyens qui permet à Partiiz d'être rémunéré. Quand un
-	utilisateur sponsorise sa soirée (voir partie <a href="/parties/create">"CREER SA SOIREE"</a> et
-	<a href="/parties/manage">"GERER SA SOIREE"</a>), l'argent est deversé à Partiiz
+	utilisateur sponsorise sa soirée (voir partie <a href="/Soirée/Créer sa Soirée"
+		>"CRÉER SA SOIRÉE"</a
+	>
+	et
+	<a href="/Soirées/Gérer sa soirée">"GÉRER SA SOIRÉE"</a>), l'argent est deversé à Partiiz
 </p>

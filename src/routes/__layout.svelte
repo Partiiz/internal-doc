@@ -1,14 +1,48 @@
-<script>
-	import Nav from '$lib/components/Nav.svelte';
+<script context="module">
+	export async function load() {
+		const paths = await import.meta.glob('/src/routes/**/*.svelte');
+		const nav = {};
 
-	let title = '';
+		for (const path in paths) {
+			const [folder, file] = path
+				.replace(/^\/src\/routes\//, '')
+				.replace(/\.svelte$/, '')
+				.split('/');
+			if (!folder || !file) continue;
+
+			nav[folder] = nav[folder] || { endpoints: [] };
+			nav[folder].endpoints.push(file);
+		}
+
+		return { props: { nav } };
+	}
 </script>
 
-<Nav bind:title />
+<script>
+	import { page } from '$app/stores';
+
+	import Nav from '$lib/components/Nav.svelte';
+
+	export let nav;
+
+	$: titles = decodeURI($page.url.pathname).split('/').slice(-2);
+</script>
+
+<svelte:head>
+	{#if titles[0]}
+		<title>
+			{titles[0]} - {titles[1]}
+		</title>
+	{:else}
+		<title>Partiiz Doc</title>
+	{/if}
+</svelte:head>
+
+<Nav bind:nav />
 
 <main>
-	{#if title}
-		<h1>{title}</h1>
+	{#if titles[1]}
+		<h1>{titles[1]}</h1>
 	{/if}
 	<slot />
 </main>

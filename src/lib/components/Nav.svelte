@@ -5,61 +5,24 @@
 
 	import Icon from './Icon.svelte';
 
-	export let title;
-
-	const nav = [
-		{
-			base: 'home',
-			label: 'Accueil',
-			links: {
-				main: 'Page Principal'
-			}
-		},
-		{
-			base: 'parties',
-			label: 'Soirées',
-			links: {
-				card: 'Carte',
-				create: 'Création de soirée'
-			}
-		},
-		{
-			base: 'generic',
-			label: 'Générique',
-			links: {
-				filters: 'Liste des Filtres',
-				reports: 'Critères de Signalements',
-				payments: 'Systemes de Paiements'
-			}
-		}
-	];
-
-	$: folder = nav.find((f) => f.base === $page.url.pathname.split('/')[1]);
-	$: title = folder?.links?.[$page.url.pathname.split('/')[2]];
+	export let nav;
 </script>
 
-<svelte:head>
-	{#if folder}
-		<title>{folder.label} - {title}</title>
-	{:else}
-		<title>Partiiz Doc</title>
-	{/if}
-</svelte:head>
-
 <nav>
-	{#each nav as folder}
-		<div class="folder" class:open={folder.open}>
-			<p on:click={() => (folder.open = !folder.open)}>
-				{folder.label}
+	{#each Object.keys(nav) as label}
+		{@const f = nav[label]}
+		<div class="folder" class:open={f.open}>
+			<p on:click={() => (nav[label].open = !nav[label].open)}>
+				{label}
 				<Icon name="chevron-down" />
 			</p>
-			{#if folder.open}
+			{#if f.open}
 				<ul transition:slide>
-					{#each Object.keys(folder.links) as href}
-						{@const path = `${base}/${folder.base}/${href}`}
+					{#each f.endpoints as endpoint}
+						{@const href = `${base}/${label}/${endpoint}`}
 						<li>
-							<a class="file" class:current={$page.url.pathname === path} href={path}>
-								{folder.links[href]}
+							<a class="file" class:current={decodeURI($page.url.pathname) === href} {href}>
+								{endpoint}
 							</a>
 						</li>
 					{/each}
