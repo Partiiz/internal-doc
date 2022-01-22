@@ -119,6 +119,10 @@
 		ul,
 		ol {
 			margin-left: 2em;
+
+			li {
+				margin-bottom: 0.5em;
+			}
 		}
 
 		a {
