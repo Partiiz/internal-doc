@@ -3,7 +3,7 @@
 <ul>
 	<li>
 		Accepter / Refuser les demandes pour rejoindre votre soirée (envoi une notification aux membres
-		qui ont été accepté mais pas ceux qui ont été réfusés)
+		qui ont été accepté mais pas ceux qui ont été réfusés). Si la soirée a été refusée à un utilisateur, la carte disparaitra de sa page d'accueil.
 	</li>
 	<li>Virer des membres de la soirée (envoi une notification au membre qui a été retiré)</li>
 	<li>Inviter des amis via l'application / via un lien à votre soirée</li>
