@@ -146,6 +146,8 @@
 			background-color: rgb(200, 200, 218);
 			border-left: 0.5em solid var(--primary);
 
+			white-space: pre-line;
+
 			b {
 				font-weight: bold;
 				text-transform: uppercase;
