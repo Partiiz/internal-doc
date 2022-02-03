@@ -144,6 +144,7 @@
 
 			border-radius: 0.25em;
 			background-color: rgb(200, 200, 218);
+			border-left: 0.5em solid var(--primary);
 
 			b {
 				font-weight: bold;
