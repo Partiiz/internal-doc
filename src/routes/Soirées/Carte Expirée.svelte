@@ -6,5 +6,5 @@
 <p>-> Filtres de la soirée</p>
 <p>-> Nombre de personnes qui ont été présente à la soirée (l'utilisateur peut entrer cette information après la soirée si il le souhaite. sinon, le nombre de personne qui a été défini de base est affiché) (Les membres ne sont pas dévoilés)</p>
 <p>-> Commentaires et notes des utilisateurs qui ont été présents à la soirée.</p>
-<p>-> Bouton pour signaler la soirée (Voir la partie "CRITERES DE SIGNALEMENT")</p>
+<p>-> Bouton pour signaler la soirée (Voir la partie "<a href="/Générique/Critères de Signalements">CRITERES DE SIGNALEMENT</a>")</p>
 <p>-> Bouton pour signaler l'organisateur de la soirée (bouton visible seulement si c'est une soirée qui a été demandé et que l'utilisateur qui regarde la carte est le demandeur)</p>
