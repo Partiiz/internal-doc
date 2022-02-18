@@ -2,7 +2,7 @@
 <p>Rechercher une soirée par nom | localisation</p>
 <p>
 	Filtre à côté de la barre de recherche (la liste du filtre sont
-	<a href="/Générique/Les Filtres">les filtres</a> du site)
+	<a href="/doc/Générique/Les Filtres">les filtres</a> du site)
 </p>
 
 <h2>Partiiz recommandées</h2>

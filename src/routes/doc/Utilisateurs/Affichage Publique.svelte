@@ -3,7 +3,7 @@
 	<li>Nom d'utilisateur | Age</li>
 	<li>Localisation de l'utilisateur</li>
 	<li>Biographie</li>
-	<li>Bouton pour <a href="/Générique/Critères de Signalements">signaler</a> l'utilisateur</li>
+	<li>Bouton pour <a href="/doc/Générique/Critères de Signalements">signaler</a> l'utilisateur</li>
 	<li>
 		Bouton "demander en ami" affiché si l'utilisateur qui consulte le profil fait actuellement
 		partit de la même soirée que l'utilisateur.
