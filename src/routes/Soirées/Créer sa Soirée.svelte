@@ -26,7 +26,7 @@
 <p>
 	Choisir d'inscrire d'avance des amis que l'on a sur l'application | inviter des amis via facebook
 	/ réseaux sociaux / un lien d'invitation, qui les redirigera vers l'appli pour les inscrire s'ils
-	ne sont pas inscrits, qui les connctera s'ils sont déjà inscrits, qui ajoutera automatiquement
+	ne sont pas inscrits, qui les connectera s'ils sont déjà inscrits, qui ajoutera automatiquement
 	l'utilisateur en amis si ils ne l'étaient pas déjà et qui affichera une pop-up
 </p>
 <q>
