@@ -50,7 +50,7 @@
 	leur carte d'identité qui est fournie lors de la demande de certification).
 </p>
 
-<h2>Pourboires</h2>
+<h2 id="pourboires">Pourboires</h2>
 <p>
 	Quand une soirée est terminée, les membres peuvent, s'ils le souhaitent, fournir un pourboire (si
 	l'organisateur de la soirée a activé l'option). Ils peuvent rentrer le montant qu'ils veulent.
@@ -62,9 +62,9 @@
 <h2>Sponsoriser sa soirée</h2>
 <p>
 	La sponsorisation de soirée est l'un des moyens qui permet à Partiiz d'être rémunéré. Quand un
-	utilisateur sponsorise sa soirée (voir partie <a href="/Soirées/Créer sa Soirée"
+	utilisateur sponsorise sa soirée (voir partie <a href="/doc/Soirées/Créer sa Soirée"
 		>"CRÉER SA SOIRÉE"</a
 	>
 	et
-	<a href="/Soirées/Gérer sa soirée">"GÉRER SA SOIRÉE"</a>), l'argent est deversé à Partiiz
+	<a href="/doc/Soirées/Gérer sa soirée">"GÉRER SA SOIRÉE"</a>), l'argent est deversé à Partiiz
 </p>

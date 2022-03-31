@@ -7,4 +7,8 @@
 <p>-> Nombre de personnes recherchés (Les membres ne sont pas dévoilés)</p>
 <p>-> Moyenne d'age (si l'organisateur en a mis une)</p>
 <p>-> Bouton pour rejoindre la soirée</p>
-<p>-> Bouton pour signaler la soirée (Voir la partie "<a href="/Générique/Critères de Signalements">CRITERES DE SIGNALEMENT</a>")</p>
+<p>
+	-> Bouton pour signaler la soirée (Voir la partie "<a
+		href="/doc/Générique/Critères de Signalements">CRITERES DE SIGNALEMENT</a
+	>")
+</p>

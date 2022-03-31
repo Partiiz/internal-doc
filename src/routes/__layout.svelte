@@ -1,51 +1,29 @@
 <script context="module">
-	export async function load() {
-		const paths = await import.meta.glob('/src/routes/**/*.svelte');
-		const nav = {};
+	import Snacks from '$lib/components/Snacks.svelte';
 
-		for (const path in paths) {
-			const [folder, file] = path
-				.replace(/^\/src\/routes\//, '')
-				.replace(/\.svelte$/, '')
-				.split('/');
-			if (!folder || !file) continue;
+	/**
+	 * @type {import('@sveltejs/kit').Load}
+	 */
+	export async function load({ session, url }) {
+		const is = (id) => session.user.profiles.includes(id);
 
-			nav[folder] = nav[folder] || { endpoints: [] };
-			nav[folder].endpoints.push(file);
+		if (is('anonymous') && url.pathname !== '/login') {
+			return {
+				redirect: '/login',
+				status: 302
+			};
 		}
 
-		return { props: { nav } };
+		return {};
 	}
 </script>
 
-<script>
-	import { page } from '$app/stores';
-
-	import Nav from '$lib/components/Nav.svelte';
-
-	export let nav;
-
-	$: titles = decodeURI($page.url.pathname).split('/').slice(-2);
-</script>
-
 <svelte:head>
-	{#if titles[0]}
-		<title>
-			{titles[0]} - {titles[1]}
-		</title>
-	{:else}
-		<title>Partiiz Doc</title>
-	{/if}
+	<title>Partiiz Doc</title>
 </svelte:head>
 
-<Nav bind:nav />
-
-<main>
-	{#if titles[1]}
-		<h1>{titles[1]}</h1>
-	{/if}
-	<slot />
-</main>
+<slot />
+<Snacks />
 
 <style global lang="scss">
 	@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -70,10 +48,16 @@
 		background-color: rgb(var(--secondary));
 	}
 
-	body {
-		display: grid;
-		grid-template-columns: auto 1fr;
-		height: 100vh;
+	* {
+		&::selection {
+			background-color: var(--primary);
+			color: rgb(var(--secondary));
+		}
+
+		&:disabled {
+			pointer-events: none;
+			opacity: 0.5;
+		}
 	}
 
 	main {
@@ -108,7 +92,8 @@
 		h5,
 		h6 {
 			&:not(:first-child) {
-				margin-top: 2.5em;
+				margin-top: 1.5em;
+				padding-top: 1em;
 			}
 		}
 
@@ -160,5 +145,42 @@
 				}
 			}
 		}
+	}
+
+	input {
+		font: inherit;
+		color: var(--primary);
+		border: 1px solid var(--primary);
+		width: 100%;
+		background-color: rgb(var(--secondary));
+
+		padding: 0.25em 0.5em;
+		border-radius: 0.25em;
+		outline: 0px solid var(--primary);
+
+		transition: linear 75ms outline-width;
+
+		&:focus {
+			outline-width: 2px;
+		}
+
+		&::placeholder {
+			color: inherit;
+			opacity: 0.5;
+		}
+	}
+
+	button {
+		cursor: pointer;
+		font: inherit;
+		border: none;
+		color: rgb(var(--secondary));
+		background-color: var(--primary);
+		width: 100%;
+
+		text-transform: lowercase;
+		text-align: center;
+		padding: 0.25em 0.5em;
+		border-radius: 0.25em;
 	}
 </style>

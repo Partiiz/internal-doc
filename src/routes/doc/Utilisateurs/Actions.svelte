@@ -33,7 +33,7 @@
 	<li>
 		Voir son porte-monnaie -> Montre le nombre d'argent qui a été récolté grâce à l'organisation
 		d'une soirée après demande et/ou grâce à la fonctionnalité pourboire d'une soirée (Voir
-		catégorie <a href="/Soirées/Créer sa Soirée">"CRÉER UNE SOIRÉE"</a>) L'argent dans le
+		catégorie <a href="/doc/Soirées/Créer sa Soirée">"CRÉER UNE SOIRÉE"</a>) L'argent dans le
 		porte-monnaie peut être transféré à tout moment à leur compte en banque (RIB) / carte bancaire
 		ou PayPal. Il n'y a pas de plafond pour se verser de l'argent (inspiré de Pumpkin)
 	</li>

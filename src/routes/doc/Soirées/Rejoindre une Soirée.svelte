@@ -35,15 +35,15 @@
 	suivi de la liste des membres de la soirée. En cliquant sur un membre, que ce soit via la liste
 	des membres ou sur leur photo quand ils écrivent sur le tchat, l'utilisateur peut avoir accès à
 	leur profil public. Ils peuvent également cliquer sur le bouton "demander en ami" (voir <a
-		href="/Utilisateurs/Profil">SYSTEME D'AMITIÉ</a
+		href="/doc/Utilisateurs/Profil">SYSTEME D'AMITIÉ</a
 	>). Le groupe tchat peut contenir -> des messages vocaux, des envois de photos (pellicule ou prise
 	direct par la caméra), des messages écrits.
 </p>
 
 <p>
 	-> Une fois la soirée terminée, l'application vous demande si vous voulez fournir un pourboire à
-	l'organisateur (s'il a activé la fonctionnalité (VOIR LA PARTIE <a href="/Soirées/Créer sa Soirée"
-		>CRÉER UNE SOIRÉE</a
+	l'organisateur (s'il a activé la fonctionnalité (VOIR LA PARTIE <a
+		href="/doc/Soirées/Créer sa Soirée">CRÉER UNE SOIRÉE</a
 	>)), ensuite, l'application demande si l'utilisateur veut noter la soirée et écrire un commentaire
 	(commentaire optionnel), enfin, une pop-up s'affiche avec la liste des membres de la soirée avec
 	un bouton "ajouter en ami" à côté de chaque membres et un bouton "fermer" si l'utilisateur veut se

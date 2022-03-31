@@ -3,7 +3,8 @@
 <ul>
 	<li>
 		Accepter / Refuser les demandes pour rejoindre votre soirée (envoi une notification aux membres
-		qui ont été accepté mais pas ceux qui ont été réfusés). Si la soirée a été refusée à un utilisateur, la carte disparaitra de sa page d'accueil.
+		qui ont été accepté mais pas ceux qui ont été réfusés). Si la soirée a été refusée à un
+		utilisateur, la carte disparaitra de sa page d'accueil.
 	</li>
 	<li>Virer des membres de la soirée (envoi une notification au membre qui a été retiré)</li>
 	<li>Inviter des amis via l'application / via un lien à votre soirée</li>
@@ -12,7 +13,7 @@
 	<li>
 		Confirmer que tel ou tel membre est présent (option disponible seulement le jour de la soirée)
 		(Cela aide pour l'organisation et aura un impact sur le nombre de participants présents affiché
-		sur la carte expirée de la soirée (VOIR PARTIE <a href="/Soirées/Carte Expirée"
+		sur la carte expirée de la soirée (VOIR PARTIE <a href="/doc/Soirées/Carte Expirée"
 			>CARTE SOIREE EXPIREE</a
 		>))
 	</li>
@@ -27,6 +28,6 @@
 		(optionnel et après expiration de la soirée seulement)
 	</li>
 	<li>
-		Sponsoriser la soirée (voir partie <a href="/Soirées/Créer sa Soirée">CRÉER UNE SOIRÉE</a>)
+		Sponsoriser la soirée (voir partie <a href="/doc/Soirées/Créer sa Soirée">CRÉER UNE SOIRÉE</a>)
 	</li>
 </ul>
