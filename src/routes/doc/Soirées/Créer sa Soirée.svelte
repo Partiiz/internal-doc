@@ -11,6 +11,7 @@
 <p>-> Désigner les filtres de la soirée parmis la liste proposée</p>
 <p>-> Désigner le nombre de personnes recherchées</p>
 <p>-> Entrer une moyenne d'age (optionnel)</p>
+<p>-> Bouton "Prévisualisation de la soirée", quand il est cliqué, un modal (pop-up) apparait avec la card de sa soirée</p>
 
 <h2>Activer des fonctionnalitées</h2>
 <ul>
@@ -27,7 +28,8 @@
 	Choisir d'inscrire d'avance des amis que l'on a sur l'application | inviter des amis via facebook
 	/ réseaux sociaux / un lien d'invitation, qui les redirigera vers l'appli pour les inscrire s'ils
 	ne sont pas inscrits, qui les connectera s'ils sont déjà inscrits, qui ajoutera automatiquement
-	l'utilisateur en amis si ils ne l'étaient pas déjà et qui affichera une pop-up
+	l'utilisateur en amis si ils ne l'étaient pas déjà et qui affichera une pop-up. L'owner peut
+	directement changer les rôles des membres pendant la création de la soirée.
 </p>
 <q>
 	<b>nom de l'organisateur</b> vous as invité à rejoindre <b>nom de la soirée</b>.

@@ -10,6 +10,11 @@
 	<li>Inviter des amis via l'application / via un lien à votre soirée</li>
 	<li>Supprimer la soirée (Envoi une notification aux membres)</li>
 	<li>Modifier la date de la soirée (envoi une notification aux membres)</li>
+	<li>Modifier la description de la soirée (envoi une notification aux membres)</li>
+	<li>Modifier l'adresse de la soirée (envoi une notification aux membres)</li>
+	<li>Activer/Désactiver l'affichage du numéro aux membres</li>
+	<li>Activer/Désactiver qui ramène quoi</li>
+	<li>Activer/Désactiver la fonctionnalité pourboire</li>
 	<li>
 		Confirmer que tel ou tel membre est présent (option disponible seulement le jour de la soirée)
 		(Cela aide pour l'organisation et aura un impact sur le nombre de participants présents affiché
