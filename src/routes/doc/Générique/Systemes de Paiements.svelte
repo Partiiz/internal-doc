@@ -68,3 +68,16 @@
 	et
 	<a href="/doc/Soirées/Gérer sa soirée">"GÉRER SA SOIRÉE"</a>), l'argent est deversé à Partiiz
 </p>
+
+<h2>Précision</h2>
+<h3>Système de paiement</h3>
+<p>
+	Nous n'avons actuellement pas assez d'expérience en terme de monétisation / système de paiement pour savoir comment
+	l'argent doit être transféré ou quel service utiliser. Il n'y a donc pas encore de cahier des charges concernant une page
+	de système de paiement.
+</p>
+<h3>Wallet</h3>
+<p>
+	De même, nous n'avons pas assez d'expérience en terme de monétisation / système de paiement pour savoir comment gérer un
+	système de porte-monnaie.
+</p>
