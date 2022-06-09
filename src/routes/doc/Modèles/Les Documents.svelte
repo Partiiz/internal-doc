@@ -31,8 +31,8 @@
 <div class="models">
 	{#each models as model}
 		<div class="model">
-			<h1>{model.name}</h1>
-			<p>{model.description}</p>
+			<h1>{model['@name']}</h1>
+			<p>{model['@description']}</p>
 			<Object data={new model()} bind:description />
 		</div>
 	{/each}

@@ -70,6 +70,9 @@ export class Model {
  */
 export const models = [
 	class User extends Model {
+		static '@name' = 'User';
+		static '@description' = 'Un Utilisateur';
+
 		avatar = types.string.withDescription('Le nom du fichier');
 		profiles = [types.string];
 		status = types.user_status;
@@ -132,6 +135,9 @@ export const models = [
 	},
 
 	class Partiiz extends Model {
+		static '@name' = 'Partiiz';
+		static '@description' = 'Une Partiiz';
+
 		name = types.string;
 
 		covers = [types.string.withDescription("Le chemin vers l'image de couverture")];
@@ -221,7 +227,8 @@ export const models = [
 	},
 
 	class Demand extends Model {
-		static description = 'Une demande de soirée';
+		static '@name' = 'Demand';
+		static '@description' = 'Une demande de soirée';
 
 		author = types.user_id;
 		tips = types.boolean;
@@ -248,7 +255,8 @@ export const models = [
 	},
 
 	class Report extends Model {
-		static description =
+		static '@name' = 'Report';
+		static '@description' =
 			"Un signalement fait via l'application, ce sera visible par les administrateurs";
 
 		author = types.user_id;
@@ -263,7 +271,8 @@ export const models = [
 	},
 
 	class Admin extends Model {
-		static description = 'Un administrateur';
+		static '@name' = 'Admin';
+		static '@description' = 'Un administrateur';
 
 		level = types.admin_level;
 
