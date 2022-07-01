@@ -278,5 +278,13 @@ export const models = [
 
 		password = types.string;
 		name = types.string;
+	},
+
+	class Verify extends Model {
+		static '@name' = 'Verify';
+		static '@description' = 'Vérification du numéro de téléphone de l\'utilisateur';
+
+		phone = types.number;
+		keyCode = types.number;
 	}
 ];
