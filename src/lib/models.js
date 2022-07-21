@@ -126,9 +126,7 @@ export const models = [
 				],
 
 				upToDates: {
-					"User['_id']": types.boolean.withDescription(
-						"true si l'utilisateur est à jour sur cette conversation"
-					)
+					"User['_id']": types.object_id.withDescription("L'identifiant d'un message d'une conversation"),
 				}
 			}
 		];
