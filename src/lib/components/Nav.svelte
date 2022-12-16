@@ -82,6 +82,13 @@
 			{/if}
 		</div>
 	{/each}
+	<button
+		class="logout"
+		on:click={() => {
+			user.logout();
+			goto("/");
+		}}>👋</button
+	>
 </nav>
 
 <style lang="scss">
@@ -107,7 +114,9 @@
 
 		background-color: var(--primary);
 		color: rgb(var(--secondary));
-		padding-bottom: 10em;
+
+		display: flex;
+		flex-direction: column;
 	}
 
 	ul {
@@ -178,5 +187,10 @@
 			background-color: rgb(var(--secondary));
 			color: var(--primary);
 		}
+	}
+
+	.logout {
+		margin-top: auto;
+		margin-bottom: 2rem;
 	}
 </style>

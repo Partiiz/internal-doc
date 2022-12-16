@@ -30,10 +30,19 @@ function init() {
 		await refresh();
 	}
 
+	function logout() {
+		localStorage.removeItem("jwt");
+		set({
+			_id: "-1",
+			profiles: ["anonymous"]
+		});
+	}
+
 	return {
 		subscribe,
 		refresh,
-		login
+		login,
+		logout
 	};
 }
 
