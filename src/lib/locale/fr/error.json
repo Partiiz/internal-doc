@@ -1,0 +1,8 @@
+{
+	"user": {
+		"name_taken": "Ce nom d'utilisateur est déjà pris 🥸",
+		"not_found": "Utilisateur introuvable 🤔",
+		"invalid_password": "Mot de passe incorrect 🤔"
+	},
+	"unknown": "Une erreur inconnue est survenue 🤔"
+}
